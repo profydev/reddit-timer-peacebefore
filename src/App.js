@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react';
+import GlobalFonts from './infrastructure/theme/fonts';
 
 function App() {
-  return <div>App Placeholder</div>;
+  return (
+    <div>
+      <GlobalFonts />
+      App Placeholder
+    </div>
+  );
 }
 
 export default App;
