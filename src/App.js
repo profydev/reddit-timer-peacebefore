@@ -1,13 +1,16 @@
 import React from 'react';
-import GlobalFonts from './infrastructure/theme/fonts';
 
-function App() {
+import GlobalStyles from './infrastructure/theme/globalstyles';
+
+export default function App() {
   return (
     <div>
-      <GlobalFonts />
-      App Placeholder
+      <GlobalStyles />
+      <h1>No reactions to your Reddit posts?</h1>
+      <p>
+        Great timing, great results! Find the best time to post on your
+        subreddit.
+      </p>
     </div>
   );
 }
-
-export default App;
