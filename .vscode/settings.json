@@ -1,4 +1,7 @@
 {
-  "javascript.preferences.quoteStyle": "single",
-  "prettier.singleQuote": true
+  "javascript.preferences.quoteStyle": "double",
+  "prettier.embeddedLanguageFormatting": "off",
+  "prettier.enable": false,
+  "prettier.requirePragma": true,
+  "prettier.semi": false
 }
