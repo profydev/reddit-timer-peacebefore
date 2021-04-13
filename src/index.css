@@ -4,11 +4,11 @@
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 400;
-  src: url('./infrastructure/theme/fonts/Bitter-Regular.ttf') format('truetype');
+  src: url('./styles/theme/fonts/Bitter-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./infrastructure/theme/fonts/Montserrat-Regular.ttf')
+  src: url('./styles/theme/fonts/Montserrat-Regular.ttf')
     format('truetype');
 }
