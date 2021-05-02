@@ -1,0 +1,14 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./styles/theme/fonts/Bitter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./styles/theme/fonts/Montserrat-Regular.ttf')
+    format('truetype');
+}
