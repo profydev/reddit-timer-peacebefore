@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Switch, Route } from 'react-router-dom';
 
+import HomePage from './pages/home.page';
+import SearchPage from './pages/search.page';
+
 import GlobalStyles from './styles/theme/globalstyles';
 
 export default function App() {
@@ -8,15 +11,13 @@ export default function App() {
     <div>
       <GlobalStyles />
       <Switch>
-        <Route exact path="/" render={() => null} />
-        <Route exact path="/search" render={() => null} />
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/javascript">
+          <SearchPage />
+        </Route>
       </Switch>
-
-      <h1>No reactions to your Reddit posts?</h1>
-      <p>
-        Great timing, great results! Find the best time to post on your
-        subreddit.
-      </p>
     </div>
   );
 }

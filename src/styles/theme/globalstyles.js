@@ -9,7 +9,6 @@ p {
 }
 
 a {
-  font-size: 14px;
   color: #636363;
 }
 
