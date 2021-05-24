@@ -13,7 +13,7 @@ const Header = () => (
       </LogoContainer>
       <Links>
         <LinkStyle to="/search/javascript">Search</LinkStyle>
-        <LinkStyle to="#how-it-works">How It Works</LinkStyle>
+        <LinkStyle to="#how-it-works">How it works</LinkStyle>
         <LinkStyle to="#about">About</LinkStyle>
       </Links>
     </NavContainer>
