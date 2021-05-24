@@ -1,23 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Normalize } from 'styled-normalize';
+import Header from './components/header/header.component';
+import GlobalStyles from './styles/theme/globalstyles';
 
 import HomePage from './pages/home.page';
 import SearchPage from './pages/search.page';
 
-import GlobalStyles from './styles/theme/globalstyles';
-
-export default function App() {
+function App() {
   return (
-    <div>
+    <Router>
+      <Normalize />
       <GlobalStyles />
+      <Header />
       <Switch>
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/javascript">
+        <Route exact path="/search">
           <SearchPage />
         </Route>
       </Switch>
-    </div>
+    </Router>
   );
 }
+
+export default App;

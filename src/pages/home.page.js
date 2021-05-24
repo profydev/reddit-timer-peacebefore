@@ -1,9 +1,7 @@
 import React from 'react';
-import Header from '../components/header/header.component';
 
 const HomePage = () => (
   <div>
-    <Header />
     <div>
       <h1>No reactions to your Reddit posts?</h1>
       <p>
