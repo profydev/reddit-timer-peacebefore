@@ -7,7 +7,7 @@ const HomePage = () => (
       <p>
         Great timing, great results! Find the best time to post on your subreddit.
       </p>
-      <div id="how-it-works">
+      <div id="works">
         <h2>How It Works</h2>
       </div>
       <div id="about">

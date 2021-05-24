@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/search">
+        <Route exact path="/search/javascript">
           <SearchPage />
         </Route>
       </Switch>

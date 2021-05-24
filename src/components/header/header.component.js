@@ -35,8 +35,8 @@ const Header = () => (
         <NavLink to="/"><Logo /></NavLink>
       </LogoContainer>
       <Links>
-        <LinkStyle to="/search">Search</LinkStyle>
-        <LinkStyle to="#how-it-works">How It Works</LinkStyle>
+        <LinkStyle to="/search/javascript">Search</LinkStyle>
+        <LinkStyle to="#works">How It Works</LinkStyle>
         <LinkStyle to="#about">About</LinkStyle>
       </Links>
     </NavContainer>
