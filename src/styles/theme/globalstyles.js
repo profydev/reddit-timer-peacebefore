@@ -1,15 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: #93918F;
-}
-
 a {
-  font-size: 14px;
   color: #636363;
 }
 
@@ -22,6 +14,22 @@ h1 {
 h2 {
   font-family: 'Bitter', serif;
   font-size: 24px;
+}
+
+ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #93918F;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #93918F;
+}
+
+#subtitle {
+  text-align: center;
 }
 
 button {

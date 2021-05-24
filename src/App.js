@@ -1,22 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Switch, Route } from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Normalize } from 'styled-normalize';
+import Header from './components/header/header.component';
 import GlobalStyles from './styles/theme/globalstyles';
 
-export default function App() {
-  return (
-    <div>
-      <GlobalStyles />
-      <Switch>
-        <Route exact path="/" render={() => null} />
-        <Route exact path="/search" render={() => null} />
-      </Switch>
+import HomePage from './pages/home.page';
+import SearchPage from './pages/search.page';
 
-      <h1>No reactions to your Reddit posts?</h1>
-      <p>
-        Great timing, great results! Find the best time to post on your
-        subreddit.
-      </p>
-    </div>
+function App() {
+  return (
+    <Router>
+      <Normalize />
+      <GlobalStyles />
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/search/javascript">
+          <SearchPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
+
+export default App;
