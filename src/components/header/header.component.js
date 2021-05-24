@@ -29,16 +29,18 @@ const LinkStyle = styled(NavLink)`
 `;
 
 const Header = () => (
-  <NavContainer>
-    <LogoContainer>
-      <NavLink to="/"><Logo /></NavLink>
-    </LogoContainer>
-    <Links>
-      <LinkStyle to="/search">Search</LinkStyle>
-      <LinkStyle to="#how-it-works">How It Works</LinkStyle>
-      <LinkStyle to="#about">About</LinkStyle>
-    </Links>
-  </NavContainer>
+  <header>
+    <NavContainer>
+      <LogoContainer>
+        <NavLink to="/"><Logo /></NavLink>
+      </LogoContainer>
+      <Links>
+        <LinkStyle to="/search">Search</LinkStyle>
+        <LinkStyle to="#how-it-works">How It Works</LinkStyle>
+        <LinkStyle to="#about">About</LinkStyle>
+      </Links>
+    </NavContainer>
+  </header>
 );
 
 export default Header;
