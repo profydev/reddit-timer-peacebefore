@@ -10,12 +10,13 @@ export const Post = styled.div`
 `;
 
 export const PostTitle = styled.h2`
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  height: 0px;
+  padding-bottom: 5px;
 `;
 
 export const PostContent = styled.p`
+  height: 0px;
   line-height: 155%;
   font-size: 16px;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 `;

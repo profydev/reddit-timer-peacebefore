@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {
-  Links, LinkStyle, LogoContainer, LogoStyle, NavContainer,
+  Links, LinkStyle, LogoContainer, LogoStyle, NavContainer, ProfyLink,
 } from './footer.styles';
 
 const Footer = () => (
   <footer>
     <NavContainer>
       <Links>
-        <LinkStyle to="https://profy.dev/employers">profy.dev</LinkStyle>
+        <ProfyLink href="https://profy.dev/employers">profy.dev</ProfyLink>
       </Links>
       <LogoContainer>
         <NavLink to="/"><LogoStyle /></NavLink>

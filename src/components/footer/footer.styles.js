@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 export const NavContainer = styled.nav`
-  height: 100px;
+  height: 125px;
   margin-left: 250px;
   margin-right: 250px;
   display: flex;
@@ -27,6 +27,13 @@ export const Links = styled.div`
 `;
 
 export const LinkStyle = styled(NavLink)`
+  text-decoration: none;
+  align-self: center;
+`;
+
+export const ProfyLink = styled.a`
+  font-family: 'Montserrat';
+  font-size: 14px;
   text-decoration: none;
   align-self: center;
 `;
