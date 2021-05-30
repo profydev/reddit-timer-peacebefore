@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/full-logo.svg';
 import {
   NavContainer, LogoContainer, Links, LinkStyle,
 } from './header.styles';
-import { ReactComponent as Logo } from '../../assets/full-logo.svg';
 
 const Header = () => (
   <header>
