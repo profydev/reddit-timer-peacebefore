@@ -18,12 +18,28 @@ h2 {
   font-size: 24px;
 }
 
+<<<<<<< HEAD
+=======
+ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #93918F;
+}
+
+>>>>>>> 2553374f6fa1d627501b1dff25d3a3a11381881f
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #93918F;
 }
 
+<<<<<<< HEAD
+=======
+#subtitle {
+  text-align: center;
+}
+
+>>>>>>> 2553374f6fa1d627501b1dff25d3a3a11381881f
 button {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
