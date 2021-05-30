@@ -1,31 +1,32 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 export const NavContainer = styled.nav`
+  height: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 55px;
 `;
 
 export const LogoContainer = styled.div`
+  width: 0px;
+  padding-left: 7px;
+`;
+
+export const LogoStyle = styled(Logo)`
   display: block;
-  margin-left: 80px;
-  margin-top: 33px;
 `;
 
 export const Links = styled.div`
   font-family: 'Montserrat';
-  font-size: 15.5px;
-  font-size-adjust: 15.5px;
-  margin-right: 80px;
-  margin-top: 30px;
+  font-size: 14px;
 `;
 
 export const LinkStyle = styled(NavLink)`
   text-decoration: none;
   align-self: center;
-  padding-left: 26px;
-  padding-right: 1px;
 `;

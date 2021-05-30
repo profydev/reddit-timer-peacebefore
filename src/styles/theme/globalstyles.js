@@ -8,28 +8,20 @@ a {
 h1 {
   font-family: 'Bitter', serif;
   font-size: 38px;
+  font-weight: 300;
   text-align: center;
 }
 
 h2 {
   font-family: 'Bitter', serif;
+  font-weight: 300;
   font-size: 24px;
-}
-
-ul {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #93918F;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #93918F;
-}
-
-#subtitle {
-  text-align: center;
 }
 
 button {

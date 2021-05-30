@@ -4,8 +4,10 @@ import { Normalize } from 'styled-normalize';
 import Header from './components/header/header.component';
 import GlobalStyles from './styles/theme/globalstyles';
 
-import HomePage from './pages/home.page';
+import HomePage from './pages/home/home.page';
 import SearchPage from './pages/search.page';
+import TermsPage from './pages/terms.page';
+import Footer from './components/footer/footer.component';
 
 function App() {
   return (
@@ -20,7 +22,11 @@ function App() {
         <Route exact path="/search/javascript">
           <SearchPage />
         </Route>
+        <Route exact path="/terms">
+          <TermsPage />
+        </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
