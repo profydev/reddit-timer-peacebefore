@@ -4,17 +4,13 @@ import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 export const NavContainer = styled.nav`
   height: 125px;
-  margin-left: 250px;
-  margin-right: 250px;
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-`;
-
-export const LogoContainer = styled.div`
-  width: 0px;
-  padding-left: 7px;
 `;
 
 export const LogoStyle = styled(Logo)`
@@ -23,7 +19,9 @@ export const LogoStyle = styled(Logo)`
 
 export const Links = styled.div`
   font-family: 'Montserrat';
-  font-size: 14px;
+  font-size: 0.875em;
+  flex: 1;
+  text-align: right;
 `;
 
 export const LinkStyle = styled(NavLink)`
@@ -35,5 +33,6 @@ export const ProfyLink = styled.a`
   font-family: 'Montserrat';
   font-size: 14px;
   text-decoration: none;
-  align-self: center;
+  flex: 1;
+  text-align: left;
 `;
