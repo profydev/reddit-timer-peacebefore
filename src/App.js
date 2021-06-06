@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import Header from './components/header/header.component';
 import GlobalStyles from './styles/theme/globalstyles';
+import theme from './styles/theme';
+import Header from './components/header/header.component';
 
 import HomePage from './pages/home/home.page';
 import SearchPage from './pages/search.page';
@@ -11,7 +13,7 @@ import Footer from './components/footer/footer.component';
 
 function App() {
   return (
-    <Router>
+    <ThemeProvider theme={theme}>
       <Normalize />
       <GlobalStyles />
       <Header />
@@ -27,7 +29,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </Router>
+    </ThemeProvider>
   );
 }
 

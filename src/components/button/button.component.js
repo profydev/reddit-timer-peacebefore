@@ -7,8 +7,18 @@
 //   justify-content: center;
 // `;
 
+// const StyledButton = styled.button`
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 14px;
+//   color: #FFFFFF;
+//   background-color: #FDB755;
+//   border-radius: 4px;
+//   border: none;
+//   padding: 10px;
+//   `;
+
 // const OrangeButton = (
 //   <ButtonContainer>
-//     <button type="button">SHOW ME THE BEST TIME</button>
+//     <StyledButton>SHOW ME THE BEST TIME</StyledButton>
 //   </ButtonContainer>
 // );

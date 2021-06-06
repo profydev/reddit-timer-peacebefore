@@ -1,31 +1,24 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { NavLink as UnstyledLink } from 'react-router-dom';
+import { ReactComponent as UnstyledLogo } from '../../assets/full-logo.svg';
 
-export const NavContainer = styled.nav`
+export const Container = styled.header`
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 80px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 55px;
 `;
 
-export const LogoContainer = styled.div`
+export const Logo = styled(UnstyledLogo)`
   display: block;
-  margin-left: 80px;
-  margin-top: 33px;
+  margin-top: 8px;
 `;
 
-export const Links = styled.div`
-  font-family: 'Montserrat';
-  font-size: 15.5px;
-  font-size-adjust: 15.5px;
-  margin-right: 80px;
-  margin-top: 30px;
-`;
-
-export const LinkStyle = styled(NavLink)`
+export const Link = styled(UnstyledLink)`
+  margin-left: 26px;
   text-decoration: none;
-  align-self: center;
-  padding-left: 26px;
-  padding-right: 1px;
+  color: ${(props) => props.theme.colors.brand.secondary}
 `;
