@@ -2,9 +2,8 @@ export const lineHeights = {
   default: 1.69,
 };
 
-export const containerHeights = {
-  header: '100px',
-  footer: '100px',
+export const headerHeight = {
+  default: '100px',
 };
 
 export const footerHeight = {

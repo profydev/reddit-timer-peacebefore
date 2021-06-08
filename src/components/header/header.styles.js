@@ -4,7 +4,7 @@ import { ReactComponent as UnstyledLogo } from '../../assets/full-logo.svg';
 
 export const Container = styled.header`
   width: 100%;
-  height: ${(props) => props.theme.sizes.containerHeights.header};
+  height: ${(props) => props.theme.sizes.headerHeight};
   margin: 0 auto;
   padding: 0 80px;
   display: flex;
