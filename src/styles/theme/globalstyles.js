@@ -53,6 +53,7 @@ body {
   font-family: ${(props) => props.theme.fonts.fonts.body};
   font-size: ${(props) => props.theme.fonts.fontSizes.l};
   line-height: ${(props) => props.theme.sizes.lineHeights.default};
+  letter-spacing: 0.07px;
   color: ${(props) => props.theme.colors.brand.text};
 }
 `;

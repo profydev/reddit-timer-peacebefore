@@ -1,19 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {
-  Links, LinkStyle, LogoStyle, NavContainer, ProfyLink,
-} from './footer.styles';
+import * as S from './footer.styles';
 
 const Footer = () => (
-  <footer>
-    <NavContainer>
-      <ProfyLink href="https://profy.dev/employers">profy.dev</ProfyLink>
-      <NavLink to="/"><LogoStyle /></NavLink>
-      <Links>
-        <LinkStyle to="/terms">Terms & Privacy</LinkStyle>
-      </Links>
-    </NavContainer>
-  </footer>
+  <S.Container>
+    <S.ProfyLink as="a" href="https://profy.dev/employers">
+      profy.dev
+    </S.ProfyLink>
+    <NavLink to="/">
+      <S.Logo />
+    </NavLink>
+    <S.TermsLink to="/terms">
+      Terms & Privacy
+    </S.TermsLink>
+  </S.Container>
 );
 
 export default Footer;

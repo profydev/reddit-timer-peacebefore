@@ -1,38 +1,34 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { ReactComponent as UnstyledLogo } from '../../assets/logo.svg';
 
-export const NavContainer = styled.nav`
-  height: 125px;
+export const Container = styled.footer`
   width: 100%;
   max-width: 980px;
-  margin: auto;
+  height: ${(props) => props.theme.sizes.containerHeights.footer};
+  margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: row;
   align-items: center;
 `;
 
-export const LogoStyle = styled(Logo)`
-  display: block;
+const linkStyles = css`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.brand.secondary};
+  font-size: ${(props) => props.theme.fonts.fontSizes.s};
+  flex: 1;
 `;
 
-export const Links = styled.div`
-  font-family: 'Montserrat';
-  font-size: 0.875em;
-  flex: 1;
+export const ProfyLink = styled(NavLink)`
+  ${linkStyles}
+  text-align: left;
+`;
+
+export const TermsLink = styled(NavLink)`
+  ${linkStyles}
   text-align: right;
 `;
 
-export const LinkStyle = styled(NavLink)`
-  text-decoration: none;
-  align-self: center;
-`;
-
-export const ProfyLink = styled.a`
-  font-family: 'Montserrat';
-  font-size: 14px;
-  text-decoration: none;
-  flex: 1;
-  text-align: left;
+export const Logo = styled(UnstyledLogo)`
+  display: block;
 `;
