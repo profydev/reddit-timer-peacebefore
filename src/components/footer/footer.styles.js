@@ -15,7 +15,7 @@ export const Container = styled.footer`
 const linkStyles = css`
   text-decoration: none;
   color: ${(props) => props.theme.colors.brand.secondary};
-  font-size: ${(props) => props.theme.fonts.fontSizes.s};
+  font-size: ${(props) => props.theme.fontSizes.s};
   flex: 1;
 `;
 
