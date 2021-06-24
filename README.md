@@ -64,10 +64,3 @@ yarn start
 ```sh
 yarn test
 ```
-
-## Author
-**Priya Gancayco**
-
-
-***
-***Special Thanks to [profy.dev](https://profy.dev/) and [Johannes Kettmann](https://jkettmann.com).***
